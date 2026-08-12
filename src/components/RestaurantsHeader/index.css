@@ -1,0 +1,59 @@
+.restaurants-header {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px 20px 8px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.restaurants-heading {
+  font-size: 22px;
+  color: var(--ink);
+  margin-bottom: 6px;
+}
+
+.restaurants-subheading {
+  font-size: 13px;
+  color: var(--ink-soft);
+  max-width: 480px;
+}
+
+.sort-by-container {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  align-self: flex-start;
+  border: 1px solid var(--paper-line);
+  border-radius: var(--radius-pill);
+  padding: 6px 14px;
+  background-color: var(--white);
+}
+
+.sort-by-icon {
+  font-size: 20px;
+  color: var(--saffron-dark);
+}
+
+.sort-by-select {
+  border: none;
+  background-color: transparent;
+  font-size: 14px;
+  font-family: var(--font-body);
+  color: var(--ink);
+}
+
+@media screen and (min-width: 768px) {
+  .restaurants-header {
+    flex-direction: row;
+    align-items: flex-end;
+    gap: 450px; 
+    padding: 32px 40px 12px;
+  }
+
+  .sort-by-container {
+    align-self: auto;
+    margin-left: auto;
+  }
+
+}
